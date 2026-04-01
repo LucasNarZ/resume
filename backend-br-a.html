@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Lucas Narloch Zabla | Desenvolvedor Cloud & DevOps</title>
+    <title>Lucas Narloch Zabla | Desenvolvedor Backend</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @media print {
@@ -16,15 +16,14 @@
     <div class="max-w-3xl mx-auto p-8">
       <header class="mb-6">
         <h1 class="text-3xl font-bold">Lucas Narloch Zabla</h1>
-        <h2 class="text-lg font-semibold">Desenvolvedor Cloud & DevOps</h2>
+        <h2 class="text-lg font-semibold">Desenvolvedor Backend</h2>
 
         <p class="mt-3 text-sm">
-          Engenheiro com experiência prática em infraestrutura cloud,
-          automação e arquitetura de sistemas IoT na AWS. Introduziu IaC com
-          Terraform do zero, definiu padrões arquiteturais adotados pelo time
-          e implementou pipelines CI/CD e mensageria assíncrona em ambiente de
-          produção. Sólida base em desenvolvimento backend, com visão de
-          plataforma e foco em confiabilidade, rastreabilidade e custo.
+          Desenvolvedor Backend com experiência real em produção em sistemas
+          IoT, arquiteturas serverless na AWS e decisões técnicas com impacto
+          direto no produto e no time. Trabalho com Python, Node.js e
+          TypeScript, com sólida vivência em IaC, mensageria assíncrona e
+          definição de padrões de arquitetura.
         </p>
 
         <div class="mt-2 text-sm">
@@ -57,22 +56,16 @@
 
       <section class="mb-6 text-sm">
         <h3 class="text-lg font-bold border-b pb-1 mb-2">Competências</h3>
-        <ul class="list-disc list-inside text-sm space-y-1">
-          <li>
-            <strong>IaC & Cloud</strong>: Terraform, AWS Lambda, SQS, S3,
-            DynamoDB, IoT Core, CloudWatch, EC2, RDS
-          </li>
-          <li>
-            <strong>CI/CD & DevOps</strong>: GitHub Actions, Docker,
-            Prometheus, Grafana, Nginx
-          </li>
+        <ul class="list-disc list-inside space-y-1">
           <li>
             <strong>Backend</strong>: Python, Node.js, TypeScript, NestJS,
-            FastAPI, PostgreSQL, MySQL
+            FastAPI, PostgreSQL, MySQL, DynamoDB, Jest, Sequelize
           </li>
           <li>
-            <strong>Frontend</strong>: Next.js, React, TailwindCSS
+            <strong>Infra & Cloud</strong>: AWS Lambda, SQS, S3, IoT Core,
+            CloudWatch, Terraform, Docker, GitHub Actions, Prometheus, Grafana
           </li>
+          <li><strong>Frontend</strong>: Next.js, React, TailwindCSS</li>
         </ul>
       </section>
 
@@ -80,49 +73,51 @@
         <h3 class="text-lg font-bold border-b pb-1 mb-2">Experiência</h3>
 
         <div class="mb-3">
-          <div class="font-bold text-lg">
-            Desenvolvedor Backend
-          </div>
+          <div class="font-bold text-lg">Desenvolvedor Backend</div>
           <div class="text-sm font-semibold">
             SmartLy Fabricação de Dispositivos Inteligentes Ltda.
           </div>
-          <div class="text-sm text-gray-600 mb-2">09/2024 – Atual</div>
+          <div class="text-sm text-gray-600 mb-2">09/2024 — Atual</div>
 
           <ul class="list-disc list-inside text-sm space-y-1">
             <li>
-              Introduzi IaC com Terraform do zero, migrando infraestrutura
-              gerenciada manualmente no console AWS para código versionado em
-              repositório, criando ambiente de homologação e garantindo
-              rastreabilidade total das mudanças.
+              Introduzi IaC com Terraform do zero — a infraestrutura era
+              gerenciada manualmente no console AWS sem nenhuma rastreabilidade.
+              Hoje toda mudança é versionada em repositório e existe ambiente de
+              homologação.
             </li>
             <li>
-              Liderei a migração arquitetural de funções Lambda por endpoint com
-              chamadas síncronas para um Lambda monolito com FastAPI, definindo
-              os padrões de código e estrutura adotados pelo time.
+              Conduzi a consolidação de múltiplas funções AWS Lambda por
+              endpoint em uma arquitetura monolítica baseada em FastAPI,
+              reduzindo complexidade operacional, melhorando a coesão do código
+              e simplificando o processo de deploy.
             </li>
             <li>
               Introduzi processamento assíncrono com SQS para desacoplar envio
-              de notificações e publish no AWS IoT Core.
+              de notificações e publish no AWS IoT Core, eliminando bloqueios no
+              fluxo principal das requisições.
             </li>
             <li>
-              Automatizei deploys com pipelines CI/CD no GitHub Actions
-              integrados ao Terraform.
+              Otimizei funções AWS Lambda em Python: média de erros a cada 5
+              minutos caiu de 113 para 5 — redução de 95%.
             </li>
             <li>
-              Reduzi custo de infraestrutura em 20% ao identificar e eliminar
-              gastos desnecessários na AWS.
+              Reduzi custo de infraestrutura em 20% via análise de métricas no
+              CloudWatch, identificando e eliminando recursos ociosos.
             </li>
             <li>
-              Otimizei funções AWS Lambda em Python, reduzindo a média de erros
-              de 113 para 5 a cada 5 minutos.
+              Desenvolvi endpoint de migração de dados entre dispositivos IoT
+              integrando MySQL, DynamoDB, S3 e AWS IoT Core via MQTT, garantindo
+              consistência durante substituição de hardware.
             </li>
             <li>
-              Implementei endpoint de migração de dados entre dispositivos IoT
-              integrando múltiplos serviços AWS.
+              Automatizei deploys com pipelines CI/CD no GitHub Actions,
+              substituindo processos manuais e eliminando riscos de configuração
+              em produção.
             </li>
             <li>
-              Desenvolvi utilitários Docker para simular Lambdas localmente,
-              reduzindo riscos operacionais.
+              Criei utilitários Docker para simular Lambdas localmente,
+              permitindo testes de integração sem deploys em produção.
             </li>
           </ul>
         </div>
@@ -133,24 +128,24 @@
 
         <div class="text-sm">
           <p class="font-semibold text-lg">
-            Sunlog.dev - Plataforma de Devlogs em Produção
+            Sunlog.dev — Plataforma de Devlogs por Projeto
           </p>
           <p>
-            Plataforma full stack em produção com deploy automatizado na AWS.
-            Pipeline CI/CD, containerização com Docker, proxy com Nginx e
-            monitoramento com Prometheus e Grafana.
+            Plataforma full stack em produção. APIs REST, modelagem relacional,
+            autenticação, monitoramento com Prometheus e Grafana, deploy
+            automatizado na AWS com pipeline CI/CD.
           </p>
           <p>
-            <span class="font-semibold">Tecnologias:</span> Terraform, Docker,
-            GitHub Actions, AWS, Nginx, Prometheus, Grafana, NestJS,
-            PostgreSQL, Next.js
+            <span class="font-semibold">Tecnologias:</span> NestJS · Sequelize ·
+            Next.js · PostgreSQL · Jest · AWS · GitHub Actions · Docker ·
+            Prometheus · Grafana
           </p>
           <a
             href="https://github.com/LucasNarZ/Sunlog.dev"
             target="_blank"
             class="text-blue-700 underline mr-5"
-            >Código
-          </a>
+            >Código</a
+          >
           <a
             href="https://sunlog.dev"
             class="text-blue-700 underline"
@@ -166,23 +161,21 @@
         <div class="mb-2 text-sm">
           <div class="flex justify-between font-semibold">
             <span>PUCPR — Bacharelado em Ciência da Computação</span>
-            <span>02/2025 - 12/2028</span>
+            <span>02/2025 — 12/2028</span>
           </div>
-          <p class="italic">Bolsista integral (100%)</p>
+          <p class="italic">Bolsista Integral</p>
           <p>
-            Algoritmos, Estruturas de Dados, Lógica Matemática, Redes,
-            Sistemas Operacionais, Modelagem de BD.
+            Algoritmos, Estruturas de Dados, Lógica Matemática, Desenvolvimento
+            Web, Java, Modelagem de BD
           </p>
         </div>
 
         <div class="text-sm">
           <div class="flex justify-between font-semibold">
             <span>CEEP — Técnico em Eletrônica</span>
-            <span>02/2022 - 12/2024</span>
+            <span>02/2022 — 12/2024</span>
           </div>
-          <p>
-            KiCad, design de PCB, eletrônica analógica, sistemas embarcados.
-          </p>
+          <p>KiCad, design de PCB, eletrônica analógica</p>
         </div>
       </section>
 
@@ -200,16 +193,16 @@
 
         <ul class="text-sm space-y-2">
           <li>
-            <span class="font-semibold">
-              Fundamentals of Database Engineering
-            </span>
+            <span class="font-semibold"
+              >Fundamentals of Database Engineering</span
+            >
             — Udemy
             <div class="text-gray-700">
-              Índices (B-Tree/B+Tree), paginação, particionamento, sharding,
-              replicação e transações ACID.
+              Índices (B-Tree/B+Tree), paginação, particionamento, transações
+              ACID e funcionamento interno de SGBDs.
             </div>
             <div class="text-gray-500 text-xs">
-              Instrutor: Hussein Nasser • Conclusão: Set/2025
+              Instrutor: Hussein Nasser · Conclusão: Set/2025
             </div>
           </li>
         </ul>
