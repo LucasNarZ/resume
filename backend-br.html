@@ -17,15 +17,15 @@
     <div class="max-w-3xl mx-auto p-8">
         <header class="mb-6">
             <h1 class="text-3xl font-bold">Lucas Narloch Zabla</h1>
-            <h2 class="text-lg font-semibold">Desenvolvedor Backend</h2>
+            <h2 class="text-lg font-semibold">Desenvolvedor Backend Júnior | Python, APIs REST, AWS</h2>
 
             <p class="mt-3 text-sm">
-                Desenvolvedor Backend com experiência prática em arquiteturas
-                serverless na AWS, construção de APIs e otimização de custos em cloud.
-                Trabalho com Python, Node.js e TypeScript, com foco em confiabilidade,
-                performance e sistemas escaláveis. Possuo vivência com CI/CD,
-                Infraestrutura como Código, mensageria assíncrona e monitoramento de
-                aplicações em ambientes de produção.
+                Desenvolvedor Backend Júnior com experiência em produção no desenvolvimento
+                de APIs REST, integrações entre serviços e rotinas backend em ambientes AWS.
+                Trabalho com Python, Node.js e TypeScript, com vivência em arquiteturas
+                serverless, mensageria assíncrona, CI/CD e Infraestrutura como Código.
+                Tenho foco em entregar aplicações confiáveis, com boa manutenção e evolução
+                contínua em ambiente real.
             </p>
 
             <div class="mt-2 text-sm">
@@ -47,12 +47,20 @@
             <h3 class="text-lg font-bold border-b pb-1 mb-2">Competências</h3>
             <ul class="list-disc list-inside text-sm space-y-1">
                 <li>
-                    <strong>Backend</strong>: Node.js, TypeScript, Python, NestJS,
-                    FastAPI, PostgreSQL, MySQL, DynamoDB, Jest, Sequelize
+                    <strong>Backend</strong>: Python, Node.js, TypeScript, APIs REST,
+                    FastAPI, NestJS, Sequelize, Pydantic, Jest
                 </li>
                 <li>
-                    <strong>Infra & DevOps</strong>: AWS, GitHub Actions, Docker,
-                    Terraform, SQS, Prometheus, Grafana
+                    <strong>Bancos de Dados</strong>: PostgreSQL, MySQL, DynamoDB,
+                    modelagem relacional, consultas SQL
+                </li>
+                <li>
+                    <strong>Cloud & Infra</strong>: AWS Lambda, SQS, S3, AWS IoT Core,
+                    CloudWatch, Terraform, Docker, GitHub Actions, CI/CD
+                </li>
+                <li>
+                    <strong>Monitoramento</strong>: Prometheus, Grafana,
+                    troubleshooting, análise de métricas
                 </li>
             </ul>
         </section>
@@ -61,10 +69,7 @@
             <h3 class="text-lg font-bold border-b pb-1 mb-2">Experiência</h3>
 
             <div class="mb-3">
-                <div class="font-bold text-lg">
-                    Desenvolvedor Backend
-                    <span class="text-gray-500 text-xs">(Estágio)</span>
-                </div>
+                <div class="font-bold text-lg">Desenvolvedor Backend</div>
                 <div class="text-sm font-semibold">
                     SmartLy Fabricação de Dispositivos Inteligentes Ltda.
                 </div>
@@ -72,37 +77,33 @@
 
                 <ul class="list-disc list-inside text-sm space-y-1">
                     <li>
-                        Otimizei funções AWS Lambda (Python), reduzindo a média de erros a
-                        cada 5 minutos de 113 para 5, aumentando a confiabilidade do
+                        Otimizei funções AWS Lambda em Python, reduzindo a média de erros a
+                        cada 5 minutos de 113 para 5 e aumentando a confiabilidade do
                         sistema em produção.
                     </li>
                     <li>
-                        Implementei endpoint para migração de dados entre dispositivos IoT,
+                        Desenvolvi endpoint para migração de dados entre dispositivos IoT,
                         integrando MySQL, DynamoDB, S3 e AWS IoT Core via MQTT.
                     </li>
                     <li>
-                        Colaborei na evolução da arquitetura backend, incluindo ajustes em
-                        organização de serviços e melhoria de manutenibilidade.
-                    </li>
-                    <li>
-                        Contribuí para redução de custos em cloud (~20%) a partir da análise
-                        de métricas e identificação de recursos ociosos.
-                    </li>
-                    <li>
-                        Implementei infraestrutura como código com Terraform e automatizei
+                        Estruturei infraestrutura como código com Terraform e automatizei
                         deploys com GitHub Actions, substituindo processos manuais.
                     </li>
                     <li>
-                        Participei da implementação de processamento assíncrono com SQS
-                        para desacoplamento de fluxos críticos.
+                        Contribuí para a redução de custos em cloud (~20%) a partir da análise
+                        de métricas e identificação de recursos ociosos.
+                    </li>
+                    <li>
+                        Implementei processamento assíncrono com SQS para desacoplamento de
+                        fluxos críticos e maior estabilidade nas requisições.
                     </li>
                     <li>
                         Analisei métricas no CloudWatch para investigar falhas, gargalos de
-                        performance e apoiar decisões técnicas.
+                        performance e apoiar decisões técnicas no backend.
                     </li>
                     <li>
-                        Desenvolvi utilitários Docker para simular Lambdas localmente,
-                        facilitando testes de integração e reduzindo dependência de deploys.
+                        Aprimorei a organização de serviços no backend, contribuindo para a
+                        manutenção e evolução da aplicação.
                     </li>
                 </ul>
             </div>
@@ -132,6 +133,29 @@
                 </a>
                 <a href="https://sunlog.dev" class="text-blue-700 underline" target="_blank">Live demo</a>
             </div>
+
+            <div class="text-sm mt-4">
+                <p class="font-semibold text-lg">
+                    PCBuilderBR - Backend para montagem de PCs com validação de compatibilidade
+                </p>
+                <p>
+                    Projeto full stack com backend em FastAPI e PostgreSQL para seleção de componentes,
+                    cálculo de preço total da build e análise de compatibilidade entre CPU, placa-mãe,
+                    RAM, GPU, PSU, cooler e gabinete.
+                </p>
+                <p>
+                    <span class="font-semibold">Tecnologias:</span> FastAPI, Pydantic, PostgreSQL,
+                    Docker, React, Vite, TailwindCSS, Axios
+                </p>
+                <p>
+                    Inclui regras técnicas para socket, chipset, DDR, TDP, conectores e clearance,
+                    além de worker diário para atualização de preços em lojas como Kabum, Pichau e Amazon.
+                </p>
+                <a href="https://github.com/LucasNarZ/PCBuilderBR" target="_blank"
+                    class="text-blue-700 underline mr-5">Código
+                </a>
+                <a href="https://pcbuilderbr.com" class="text-blue-700 underline" target="_blank">Live demo</a>
+            </div>
         </section>
 
         <section class="mb-6">
@@ -139,7 +163,7 @@
 
             <div class="mb-2 text-sm">
                 <div class="flex justify-between font-semibold">
-                    <span>PUCPR — Bacharelado em Ciência da Computação</span>
+                    <span>PUCPR - Bacharelado em Ciência da Computação</span>
                     <span>02/2025 - 12/2028</span>
                 </div>
                 <p class="italic">Bolsista integral (100%)</p>
@@ -151,7 +175,7 @@
 
             <div class="text-sm">
                 <div class="flex justify-between font-semibold">
-                    <span>CEEP — Técnico em Eletrônica</span>
+                    <span>CEEP - Técnico em Eletrônica</span>
                     <span>02/2022 - 12/2024</span>
                 </div>
                 <p>KiCad, design de PCB, eletrônica analógica.</p>
@@ -175,7 +199,7 @@
                     <span class="font-semibold">
                         Fundamentals of Database Engineering
                     </span>
-                    — Udemy
+                    - Udemy
                     <div class="text-gray-700">
                         Índices (B-Tree/B+Tree), paginação, particionamento, transações e
                         funcionamento interno de bancos de dados.
