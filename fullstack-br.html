@@ -81,31 +81,40 @@
 
                 <ul class="list-disc list-inside text-sm space-y-1">
                     <li>
-                        Implementei IaC com Terraform do zero, migrando infraestrutura do
-                        console AWS para código versionado em repositório e criando
-                        ambiente de homologação.
+                        Desenvolvi endpoint para migração de dados entre dispositivos
+                        IoT, integrando 4 serviços (MySQL, DynamoDB, S3 e AWS IoT Core)
+                        via MQTT.
                     </li>
                     <li>
-                        Trabalhei na migração arquitetural de funções Lambda por endpoint
-                        para um Lambda monolito com FastAPI.
+                        Implementei testes automatizados para APIs em FastAPI com
+                        pytest, incluindo 20 testes de integração com Testcontainers e
+                        50 testes unitários, aumentando a segurança nas alterações e
+                        reduzindo risco de regressões.
                     </li>
                     <li>
-                        Introduzi processamento assíncrono com SQS para desacoplar fluxos
-                        críticos.
+                        Desenvolvi um worker agendado por cron para atualização
+                        automática de horários de pôr do sol, identificando rotinas
+                        afetadas, persistindo as mudanças no banco de dados e enviando
+                        atualizações via MQTT para os dispositivos.
                     </li>
                     <li>
-                        Otimizei funções AWS Lambda em Python, reduzindo erros em 95%.
+                        Implementei processamento assíncrono com SQS para desacoplamento
+                        de fluxos críticos e maior estabilidade nas requisições.
                     </li>
                     <li>
-                        Reduzi custo de infraestrutura em 20% via análise de métricas no
-                        CloudWatch.
+                        Otimizei funções AWS Lambda em Python, reduzindo a média de
+                        erros a cada 5 minutos de 113 para 5, uma redução de 95,6%,
+                        aumentando a confiabilidade do sistema em produção.
                     </li>
                     <li>
-                        Desenvolvi endpoint de migração de dados entre dispositivos IoT
-                        integrando múltiplos serviços AWS.
+                        Estruturei infraestrutura como código com Terraform e
+                        automatizei deploys com GitHub Actions, substituindo processos
+                        manuais.
                     </li>
-                    <li>Automatizei deploys com pipelines CI/CD no GitHub Actions.</li>
-                    <li>Criei utilitários Docker para simular Lambdas localmente.</li>
+                    <li>
+                        Contribuí para a redução de custos em cloud (~20%) a partir da
+                        análise de métricas e identificação de recursos ociosos.
+                    </li>
                 </ul>
             </div>
         </section>

@@ -23,14 +23,13 @@ Desenvolvedor Full Stack Júnior com experiência prática em produção, atuand
 **SmartLy Fabricação de Dispositivos Inteligentes Ltda.**  
 09/2024 – Atual
 
-- Implementei IaC com Terraform do zero, migrando infraestrutura do console AWS para código versionado em repositório e criando ambiente de homologação.
-- Trabalhei na migração arquitetural de funções Lambda por endpoint para um Lambda monolito com FastAPI.
-- Introduzi processamento assíncrono com SQS para desacoplar fluxos críticos.
-- Otimizei funções AWS Lambda em Python, reduzindo erros em 95%.
-- Reduzi custo de infraestrutura em 20% via análise de métricas no CloudWatch.
-- Desenvolvi endpoint de migração de dados entre dispositivos IoT integrando múltiplos serviços AWS.
-- Automatizei deploys com pipelines CI/CD no GitHub Actions.
-- Criei utilitários Docker para simular Lambdas localmente.
+- Desenvolvi endpoint para migração de dados entre dispositivos IoT, integrando 4 serviços (MySQL, DynamoDB, S3 e AWS IoT Core) via MQTT.
+- Implementei testes automatizados para APIs em FastAPI com pytest, incluindo 20 testes de integração com Testcontainers e 50 testes unitários, aumentando a segurança nas alterações e reduzindo risco de regressões.
+- Desenvolvi um worker agendado por cron para atualização automática de horários de pôr do sol, identificando rotinas afetadas, persistindo as mudanças no banco de dados e enviando atualizações via MQTT para os dispositivos.
+- Implementei processamento assíncrono com SQS para desacoplamento de fluxos críticos e maior estabilidade nas requisições.
+- Otimizei funções AWS Lambda em Python, reduzindo a média de erros a cada 5 minutos de 113 para 5, uma redução de 95,6%, aumentando a confiabilidade do sistema em produção.
+- Estruturei infraestrutura como código com Terraform e automatizei deploys com GitHub Actions, substituindo processos manuais.
+- Contribuí para a redução de custos em cloud (~20%) a partir da análise de métricas e identificação de recursos ociosos.
 
 ## Projetos
 
