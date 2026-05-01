@@ -19,7 +19,7 @@ Desenvolvedor Backend com experiência em produção liderando evolução técni
 
 ## Experiência
 
-### Desenvolvedor Backend
+### Desenvolvedor Backend (Estagiário)
 **SmartLy Fabricação de Dispositivos Inteligentes Ltda.**  
 09/2024 — Atual
 

@@ -19,7 +19,7 @@ Desenvolvedor Full Stack Júnior com experiência prática em produção, atuand
 
 ## Experiência
 
-### Desenvolvedor Backend
+### Desenvolvedor Backend (Estagiário)
 **SmartLy Fabricação de Dispositivos Inteligentes Ltda.**  
 09/2024 – Atual
 

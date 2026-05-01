@@ -20,7 +20,7 @@ Profissional com foco em DevOps e Cloud, com experiência prática em infraestru
 
 ## Experiência
 
-### Desenvolvedor Backend
+### Desenvolvedor Backend (Estagiário)
 **SmartLy Fabricação de Dispositivos Inteligentes Ltda.**  
 09/2024 – Atual
 
