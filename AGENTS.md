@@ -233,6 +233,18 @@ Usar esse formato apenas se a vaga realmente puxar para cloud/serverless.
 
 ## 🧩 Estrutura Base do Currículo
 
+### Regras obrigatórias para currículos gerados
+
+Ao gerar ou customizar currículos neste diretório, nunca adicionar tecnologias, frameworks, ferramentas, responsabilidades, experiências, certificados ou competências que não estejam mencionados em pelo menos um currículo já existente no diretório.
+
+Se uma tecnologia aparece na vaga, mas não aparece em nenhum currículo existente, ela deve ser omitida ou tratada apenas como contexto da vaga, nunca como conhecimento, experiência ou competência do candidato.
+
+Não inferir conhecimento por proximidade técnica. Exemplo: saber Python/FastAPI não autoriza colocar Django; saber React não autoriza colocar Next.js se isso não estiver em currículo existente; saber AWS Lambda não autoriza colocar serviços AWS não mencionados.
+
+Currículos HTML gerados devem seguir a mesma formatação, estrutura visual e estilo do `TEMPLATE.html`, salvo instrução explícita em contrário. Não criar layouts novos, colunas laterais, temas visuais diferentes ou estilos autorais quando o pedido for gerar currículo.
+
+Antes de finalizar, revisar especificamente se há alguma tecnologia ou afirmação que não tenha fonte em currículo existente do diretório. Se houver, remover.
+
 ### 1. Título
 
 Formato:
@@ -949,5 +961,4 @@ Existe:
 E currículo certo não é o que mostra tudo.
 
 É o que mostra **somente o que importa para aquela vaga**.
-
 
