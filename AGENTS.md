@@ -392,6 +392,7 @@ Exemplos:
 * Vaga Node/NestJS/TypeScript → usar Sunlog.dev.
 * Vaga fullstack React + backend → usar Sunlog.dev.
 * Vaga backend com regras de negócio → usar PCBuilderBR.
+* Vaga de startup, especialmente startup americana, com foco em engenharia forte, sistemas, compiladores, baixo nível, infraestrutura, ferramentas internas ou perfil generalista técnico → considerar PocScript como projeto principal ou diferencial forte.
 * Vaga que pede Python e Node → pode manter os dois, se houver espaço.
 * Vaga genérica backend → escolher o projeto que melhor conversa com a stack principal.
 
@@ -961,4 +962,3 @@ Existe:
 E currículo certo não é o que mostra tudo.
 
 É o que mostra **somente o que importa para aquela vaga**.
-

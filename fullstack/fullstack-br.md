@@ -1,21 +1,12 @@
 # Lucas Narloch Zabla
 
-## Desenvolvedor Backend Júnior | Python, APIs REST, AWS
-
-Desenvolvedor Backend Júnior com experiência em produção no desenvolvimento de APIs REST, integrações entre serviços e rotinas backend em ambientes AWS. Trabalho com Python, Node.js e TypeScript, com vivência em arquiteturas serverless, mensageria assíncrona, CI/CD e Infraestrutura como Código. Tenho foco em entregar aplicações confiáveis, com boa manutenção e evolução contínua em ambiente real.
+## Desenvolvedor Full Stack Júnior | React, Next.js, Python, APIs REST
 
 - Telefone: +55 (41) 98719-8655
 - Email: lucasnarloch123@gmail.com
 - GitHub: https://github.com/LucasNarZ
 - LinkedIn: https://www.linkedin.com/in/lucasnarloch
 - Portfolio: https://lucasnarz.github.io/Portfolio/
-
-## Competências
-
-- **Backend**: Python, Node.js, TypeScript, APIs REST, FastAPI, NestJS, Sequelize, Pydantic, Jest
-- **Bancos de Dados**: PostgreSQL, MySQL, DynamoDB, modelagem relacional, consultas SQL
-- **Cloud & Infra**: AWS Lambda, SQS, S3, AWS IoT Core, CloudWatch, Terraform, Docker, GitHub Actions, CI/CD
-- **Monitoramento**: Prometheus, Grafana, troubleshooting, análise de métricas
 
 ## Experiência
 
@@ -28,25 +19,24 @@ Desenvolvedor Backend Júnior com experiência em produção no desenvolvimento 
 - Desenvolvi um worker agendado por cron para atualização automática de horários de pôr do sol, identificando rotinas afetadas, persistindo as mudanças no banco de dados e enviando atualizações via MQTT para os dispositivos.
 - Implementei processamento assíncrono com SQS para desacoplamento de fluxos críticos e maior estabilidade nas requisições.
 - Otimizei funções AWS Lambda em Python, reduzindo a média de erros a cada 5 minutos de 113 para 5, uma redução de 95,6%, aumentando a confiabilidade do sistema em produção.
-- Estruturei infraestrutura como código com Terraform e automatizei deploys com GitHub Actions, substituindo processos manuais.
-- Contribuí para a redução de custos em cloud (~20%) a partir da análise de métricas e identificação de recursos ociosos.
 
 ## Projetos
 
 ### Sunlog.dev - Plataforma de Devlogs por Projeto
 
-Plataforma full stack onde a entidade central é **Projeto**, permitindo associar **devlogs versionados** para registrar progresso e decisões técnicas. Inclui APIs REST, modelagem relacional, autenticação e monitoramento com métricas.
+Plataforma full stack em produção com interface em Next.js e TailwindCSS para publicação e leitura de devlogs, integrada a backend em NestJS e PostgreSQL com autenticação, APIs REST e deploy automatizado.
 
-- **Tecnologias**: NestJS, Sequelize, Next.js, TailwindCSS, PostgreSQL, Jest, AWS, GitHub Actions, Docker, Prometheus, Grafana
+- **Tecnologias**: Next.js, TailwindCSS, NestJS, Sequelize, PostgreSQL, Jest, AWS, GitHub Actions, Docker, Prometheus, Grafana
+- O projeto cobre fluxo completo entre frontend e backend, incluindo modelagem de dados, interface responsiva, autenticação, integração com APIs e monitoramento da aplicação em produção.
 - Código: https://github.com/LucasNarZ/Sunlog.dev
 - Live demo: https://sunlog.dev
 
-### PCBuilderBR - Backend para montagem de PCs com validação de compatibilidade
+### PCBuilderBR - Plataforma para montagem de PCs
 
-Projeto full stack com backend em FastAPI e PostgreSQL para seleção de componentes, cálculo de preço total da build e análise de compatibilidade entre CPU, placa-mãe, RAM, GPU, PSU, cooler e gabinete.
+Plataforma full stack para seleção de componentes com interface em React, filtros, busca por termos como "rtx 4060" e backend em FastAPI responsável por validações e regras de compatibilidade em tempo real.
 
-- **Tecnologias**: FastAPI, Pydantic, PostgreSQL, Docker, React, Vite, TailwindCSS, Axios
-- Inclui regras técnicas para socket, chipset, DDR, TDP, conectores e clearance, além de worker diário para atualização de preços em lojas como Kabum, Pichau e Amazon.
+- **Tecnologias**: React, Vite, TailwindCSS, react-hook-form, Zod, Axios, FastAPI, Pydantic, PostgreSQL, Docker
+- Inclui integração entre frontend e backend para soma de preços da build, análise técnica de socket, DDR, TDP e clearance, além de worker diário para atualização de ofertas em grandes lojas do mercado.
 - Código: https://github.com/LucasNarZ/PCBuilderBR
 - Live demo: https://pcbuilderbr.com
 

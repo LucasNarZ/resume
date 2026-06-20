@@ -1,74 +1,91 @@
-## 🔹 Perfil profissional (base reutilizável)
+## Professional Profile (Reusable Base)
 
-Desenvolvedor Full Stack com forte foco em backend e infraestrutura cloud, atuando em ambiente de produção com arquiteturas serverless na AWS. Possuo experiência prática na construção de APIs, automação de infraestrutura com Terraform, implementação de pipelines CI/CD e adoção de mensageria assíncrona para sistemas distribuídos.
+Full Stack Developer with a strong focus on backend and cloud infrastructure, working in production environments with serverless architectures on AWS. Practical experience building APIs, automating infrastructure with Terraform, implementing CI/CD pipelines, and adopting asynchronous messaging for distributed systems.
 
-Atualmente trabalho na SmartLy, onde atuei diretamente na evolução da arquitetura do sistema, incluindo a introdução de infraestrutura como código (IaC), automação de deploys e melhorias de confiabilidade e custo. Tenho experiência com monitoramento e observabilidade utilizando métricas e logs para identificar falhas, otimizar performance e apoiar decisões técnicas.
+Currently working at SmartLy, where I contributed directly to the evolution of the system architecture, including the introduction of infrastructure as code (IaC), deployment automation, and reliability and cost improvements. Experience with monitoring and observability using metrics and logs to identify failures, optimize performance, and support technical decisions.
 
-Além do backend, também desenvolvo aplicações full stack com React e Next.js, e tenho vivência com Docker, ambientes Linux no dia a dia e scripts em Bash para automação de processos. Recentemente venho expandindo conhecimentos em virtualização e infraestrutura, aprofundando minha base para atuar em posições de DevOps/SRE.
+In addition to backend work, I also develop full stack applications with React and Next.js, and have practical experience with Docker, daily Linux environments, and Bash scripts for process automation. Recently, I have been expanding my knowledge in virtualization and infrastructure to strengthen my foundation for DevOps/SRE positions.
 
-Busco atuar em ambientes que valorizem engenharia de software sólida, escalabilidade e autonomia, contribuindo tanto no desenvolvimento quanto na evolução da plataforma.
+I aim to work in environments that value solid software engineering, scalability, and autonomy, contributing both to software development and platform evolution.
 
 ---
 
-## 🔹 Dados pessoais (sempre no topo do currículo)
+## Personal Data (Always at the Top of the Resume)
 
-Preencher sempre:
+Always include:
 
-* **Nome:** Lucas Narloch Zabla
+* **Name:** Lucas Narloch Zabla
 * **Email:** [lucasnarloch123@gmail.com](mailto:lucasnarloch123@gmail.com)
-* **Telefone:** +55 (41) 98719-8655
-* **Localização:** Curitiba – PR
+* **Phone:** +55 (41) 98719-8655
+* **Location:** Curitiba - PR, Brazil
 * **GitHub:** [https://github.com/LucasNarZ](https://github.com/LucasNarZ)
 * **LinkedIn:** [https://linkedin.com/in/lucasnarloch](https://linkedin.com/in/lucasnarloch)
-* **Portfólio:** [https://lucasnarz.github.io/Portfolio](https://lucasnarz.github.io/Portfolio)
+* **Portfolio:** [https://lucasnarz.github.io/Portfolio](https://lucasnarz.github.io/Portfolio)
 
 ---
 
-## 🔹 Experiência profissional (modelo estruturado)
+## Professional Experience (Structured Model)
 
-**Cargo:** Desenvolvedor Backend (ou Backend com foco em Cloud/DevOps)
-**Empresa:** SmartLy Fabricação de Dispositivos Inteligentes Ltda.
-**Período:** 09/2024 – Atual
+**Role:** Backend Developer (or Backend with Cloud/DevOps focus)
+**Company:** SmartLy Fabricacao de Dispositivos Inteligentes Ltda.
+**Period:** 09/2024 - Current
 
-**Responsabilidades e entregas:**
+**Responsibilities and deliveries:**
 
-* Introdução de infraestrutura como código (Terraform), migrando recursos da AWS do console para código versionado
-* Criação e manutenção de pipelines CI/CD com GitHub Actions
-* Automação de deploys integrada com infraestrutura cloud
-* Implementação de processamento assíncrono com SQS
-* Otimização de custos em cloud (~20%)
-* Redução de erros em produção (~95%) via refatoração e melhoria de observabilidade
-* Monitoramento com CloudWatch e análise de métricas
-* Desenvolvimento de APIs e serviços backend em Python (FastAPI) e Node.js
-* Uso diário de Linux em ambiente de desenvolvimento e produção
-* Criação de scripts em Bash para automação de processos e pipelines
-* Uso de Docker para simulação de ambientes e testes locais
-* Integração entre serviços AWS (Lambda, S3, DynamoDB, IoT Core)
+* Developed an endpoint for migrating data between IoT devices, integrating 4 services (MySQL, DynamoDB, S3, and AWS IoT Core) through MQTT.
+* Implemented automated tests for FastAPI APIs with pytest, including 20 integration tests with Testcontainers and 50 unit tests, improving change safety and reducing regression risk.
+* Developed a cron-scheduled worker for automatic sunset time updates, identifying affected routines, persisting changes in the database, and sending updates to devices through MQTT.
+* Implemented asynchronous processing with SQS to decouple critical flows and improve request stability.
+* Optimized AWS Lambda functions in Python, reducing average errors every 5 minutes from 113 to 5, a 95.6% reduction, increasing production system reliability.
+* Led the consolidation of multiple AWS Lambda functions into endpoint-based FastAPI architecture, reducing operational complexity, improving code cohesion, and simplifying the deployment process.
+* Structured infrastructure as code with Terraform from scratch, replacing manual AWS console management with versioned repository changes and the creation of a staging environment.
+* Automated deployments with CI/CD pipelines in GitHub Actions, replacing manual processes and reducing configuration risks in production.
+* Introduced asynchronous processing with SQS to decouple notification sending and publishing to AWS IoT Core, removing blocking operations from the main request flow.
+* Reduced infrastructure costs by 20% through CloudWatch metric analysis, identifying and removing idle resources.
+* Worked on log and metric analysis with CloudWatch, identifying bottlenecks, production failures, and operational improvement opportunities.
+* Developed integrations between services (MySQL, DynamoDB, S3, and IoT Core), ensuring data consistency across backend and cloud components.
+* Created Docker utilities to simulate local environments and support integration testing.
+* Automated CI/CD pipelines with GitHub Actions and Bash scripts for build, validation, and deployment, reducing manual delivery steps.
+* Used Linux daily across development and production-related routines.
 
 ---
 
-## 🔹 Projetos (modelo)
+## Projects (Model)
 
-**Nome do projeto:** Sunlog.dev
-**Tipo:** Plataforma full stack em produção
+**Project name:** Sunlog.dev
+**Type:** Full stack platform in production
 **Link:** [https://sunlog.dev](https://sunlog.dev)
-**Repositório:** [https://github.com/LucasNarZ/Sunlog.dev](https://github.com/LucasNarZ/Sunlog.dev)
+**Repository:** [https://github.com/LucasNarZ/Sunlog.dev](https://github.com/LucasNarZ/Sunlog.dev)
 
-**Descrição:**
-Plataforma de devlogs com deploy automatizado na AWS, incluindo backend, frontend e infraestrutura.
+**Description:**
+Devlog platform with automated deployment on AWS, including backend, frontend, and infrastructure.
 
-**Principais pontos:**
+**Main points:**
 
-* CI/CD com GitHub Actions
-* Containerização com Docker
-* Proxy reverso com Nginx
-* Monitoramento com Prometheus e Grafana
-* Backend em NestJS + PostgreSQL
-* Frontend em Next.js
+* CI/CD with GitHub Actions
+* Containerization with Docker
+* Reverse proxy with Nginx
+* Monitoring with Prometheus and Grafana
+* Backend with NestJS + PostgreSQL
+* Frontend with Next.js
+
+**Project name:** PocScript
+**Type:** C-based compiler and study programming language
+
+**Description:**
+C-based compiler and study programming language that implements a complete pipeline from lexical analysis and parsing to semantic validation, internal IR generation, LLVM IR emission, and executable linking with a minimal libc-free assembly runtime.
+
+**Main points:**
+
+* Lexical analysis and parsing
+* Semantic validation
+* Internal IR generation
+* LLVM IR emission
+* Executable linking with a minimal libc-free assembly runtime
 
 ---
 
-## 🔹 Competências (organizado por área)
+## Skills (Organized by Area)
 
 **Backend:**
 
@@ -82,9 +99,9 @@ Plataforma de devlogs com deploy automatizado na AWS, incluindo backend, fronten
 * Terraform (IaC)
 * CI/CD (GitHub Actions)
 * Docker
-* Linux (uso diário)
-* Bash (automação e scripts)
-* Monitoramento (Prometheus, Grafana)
+* Linux (daily use)
+* Bash (automation and scripts)
+* Monitoring (Prometheus, Grafana)
 
 **Frontend:**
 
@@ -93,36 +110,35 @@ Plataforma de devlogs com deploy automatizado na AWS, incluindo backend, fronten
 
 ---
 
-## 🔹 Formação
+## Education
 
-**Curso:** Bacharelado em Ciência da Computação
-**Instituição:** PUCPR
-**Período:** 02/2025 – 12/2028
+**Program:** Bachelor's Degree in Computer Science
+**Institution:** PUCPR
+**Period:** 02/2025 - 12/2028
 
-**Principais disciplinas:**
+**Main subjects:**
 
-* Algoritmos e Estruturas de Dados
-* Programação Orientada a Objetos
-* Lógica Matemática
-* Sistemas Operacionais
-* Redes de Computadores
-* Segurança da Informação
-* Performance de Sistemas
-* Cálculo
-
----
-
-## 🔹 Certificados
-
-**Nome:** Fundamentals of Database Engineering
-**Plataforma:** Udemy
-**Instrutor:** Hussein Nasser
-**Ano:** 2025
+* Algorithms and Data Structures
+* Object-Oriented Programming
+* Mathematical Logic
+* Operating Systems
+* Computer Networks
+* Information Security
+* Systems Performance
+* Calculus
 
 ---
 
-## 🔹 Idiomas
+## Certifications
 
-* Português: Nativo
-* Inglês: Intermediário/Profissional (leitura e escuta avançadas)
+**Name:** Fundamentals of Database Engineering
+**Platform:** Udemy
+**Instructor:** Hussein Nasser
+**Year:** 2025
 
+---
+
+## Languages
+
+* Portuguese: Native
+* English: Intermediate/Professional (advanced reading and listening)

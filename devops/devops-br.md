@@ -2,21 +2,11 @@
 
 ## DevOps & Cloud Engineer Júnior | AWS, Linux, Docker, CI/CD
 
-Profissional com foco em DevOps e Cloud, com experiência prática em infraestrutura AWS, Linux, automação de deploys e operação de aplicações em produção. Atuo com Terraform, Docker, GitHub Actions, Bash, observabilidade e configuração de servidores, incluindo publicação de projetos em VPS com reverse proxy, pipelines CI/CD e monitoramento. Possuo base sólida em backend, o que facilita integração entre aplicação, infraestrutura e rotina operacional.
-
 - Telefone: +55 (41) 98719-8655
 - Email: lucasnarloch123@gmail.com
 - GitHub: https://github.com/LucasNarZ
 - LinkedIn: https://www.linkedin.com/in/lucasnarloch
 - Portfolio: https://lucasnarz.github.io/Portfolio/
-
-## Competências
-
-- **Cloud & IaC**: AWS (EC2, Lambda, SQS, S3, DynamoDB, IoT Core, CloudWatch, ECR), Terraform
-- **CI/CD & Automação**: GitHub Actions, Bash scripting, build e deploy automatizados, pipelines de entrega contínua
-- **Servidores & Containers**: Linux, Docker, VPS, Caddy, Nginx, reverse proxy, publicação de aplicações containerizadas
-- **Observabilidade & Operação**: Prometheus, Grafana, CloudWatch, análise de logs, troubleshooting, confiabilidade
-- **Backend de Apoio**: Python, Node.js, TypeScript, FastAPI, NestJS, PostgreSQL, MySQL
 
 ## Experiência
 
@@ -28,10 +18,7 @@ Profissional com foco em DevOps e Cloud, com experiência prática em infraestru
 - Automatizei pipelines CI/CD com GitHub Actions e scripts Bash para build, validação e deploy, reduzindo etapas manuais na entrega.
 - Introduzi processamento assíncrono com SQS, desacoplando fluxos críticos e melhorando a escalabilidade.
 - Otimizei funções AWS Lambda em Python, reduzindo a média de erros de 113 para 5 a cada 5 minutos (~95%).
-- Reduzi custos de infraestrutura em ~20% ao identificar e eliminar recursos ociosos.
 - Atuei na análise de logs e métricas com CloudWatch, identificando gargalos, falhas em produção e oportunidades de melhoria operacional.
-- Desenvolvi integrações entre serviços (MySQL, DynamoDB, S3, IoT Core) garantindo consistência de dados.
-- Criei utilitários com Docker para simulação de ambientes locais e testes de integração.
 
 ## Projetos
 
