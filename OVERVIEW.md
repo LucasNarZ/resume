@@ -7,7 +7,6 @@ Currently working at SmartLy, where I contributed directly to the evolution of t
 In addition to backend work, I also develop full stack applications with React and Next.js, and have practical experience with Docker, daily Linux environments, and Bash scripts for process automation. Recently, I have been expanding my knowledge in virtualization and infrastructure to strengthen my foundation for DevOps/SRE positions.
 
 I aim to work in environments that value solid software engineering, scalability, and autonomy, contributing both to software development and platform evolution.
-
 ---
 
 ## Personal Data (Always at the Top of the Resume)
@@ -50,11 +49,11 @@ Always include:
 
 ---
 
-## Projects (Model)
+## Projects 
 
 **Project name:** Sunlog.dev
 **Type:** Full stack platform in production
-**Link:** [https://sunlog.dev](https://sunlog.dev)
+**Link:** [https://sunlog.dev](https://sunlog.dev) 
 **Repository:** [https://github.com/LucasNarZ/Sunlog.dev](https://github.com/LucasNarZ/Sunlog.dev)
 
 **Description:**
@@ -68,20 +67,37 @@ Devlog platform with automated deployment on AWS, including backend, frontend, a
 * Monitoring with Prometheus and Grafana
 * Backend with NestJS + PostgreSQL
 * Frontend with Next.js
+* 100 unit tests
+* 33 HTTP Endpoints
 
 **Project name:** PocScript
-**Type:** C-based compiler and study programming language
+**Type:** Compiler written in C
+**Repository:** [https://github.com/LucasNarZ/PocScript](https://github.com/LucasNarZ/PocScript)
 
 **Description:**
-C-based compiler and study programming language that implements a complete pipeline from lexical analysis and parsing to semantic validation, internal IR generation, LLVM IR emission, and executable linking with a minimal libc-free assembly runtime.
+Built **PocScript**, a study programming language and compiler implemented in C. The project covers the full compilation pipeline from source code tokenization to AST generation, semantic analysis, internal IR lowering, LLVM IR emission, and final executable generation.
+Key highlights:
+- Implemented a staged compiler architecture with separate lexer, parser, semantic analyzer, IR builder, and LLVM IR printer.
+- Designed semantic validation for scopes, declarations, types, function calls, returns, loop control, arrays, pointers, and external functions.
+- Built support for core language features including functions, global and local variables, primitive types, arrays, pointers, control flow, function calls, and compound assignments.
+- Generated executable programs by compiling emitted LLVM IR, assembling a custom runtime, and linking without libc.
+- Developed a small runtime layer with `_start`, Linux syscall-backed primitives, and stdlib-like helpers such as `strlen`, `strcmp`, `memcpy`, and `puts`.
+- Added 196 (unit and integration) tests covering lexer, parser, semantic analysis, IR generation, IR printing, runtime, and stdlib behavior.
+Technologies: `C`, `LLVM IR`, `NASM`, `Make`, `Linux syscalls`, `Compiler Design`
 
-**Main points:**
+**Project name:** PCBuilderBR
+**Type:** Fullstack application using python
+**Link:** [https://pcbuilderbr.com](https://pcbuilderbr.com) 
+**Repository:** [https://github.com/LucasNarZ/PCBuilderBR](https://github.com/LucasNarZ/PCBuilderBR)
 
-* Lexical analysis and parsing
-* Semantic validation
-* Internal IR generation
-* LLVM IR emission
-* Executable linking with a minimal libc-free assembly runtime
+**Description:**
+Full stack project with a FastAPI and PostgreSQL backend for component selection,
+total build price calculation, and compatibility analysis between CPU, motherboard,
+RAM, GPU, PSU, cooler, and case.
+Technologies: FastAPI, Pydantic, PostgreSQL,
+Docker, React, Vite, TailwindCSS, Axios
+Includes technical rules for socket, chipset, DDR, TDP, connectors, and clearance,
+plus a daily worker for price updates from stores such as Kabum, Pichau, and Amazon.
 
 ---
 
@@ -129,16 +145,7 @@ C-based compiler and study programming language that implements a complete pipel
 
 ---
 
-## Certifications
-
-**Name:** Fundamentals of Database Engineering
-**Platform:** Udemy
-**Instructor:** Hussein Nasser
-**Year:** 2025
-
----
-
 ## Languages
 
 * Portuguese: Native
-* English: Intermediate/Professional (advanced reading and listening)
+* English: Professional proficiency

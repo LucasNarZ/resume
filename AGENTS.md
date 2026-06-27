@@ -1,964 +1,191 @@
-## 🎯 Objetivo
+# Resume Customization Guidelines
 
-Maximizar a taxa de entrevistas ajustando currículos de forma estratégica para cada vaga, alinhando:
+## Goal
 
-- Palavras-chave da vaga e ATS
-- Expectativa do recrutador
-- Nível percebido: Estágio, Júnior ou Pleno
-- Stack, responsabilidades e contexto da empresa
-- Evidências reais da experiência do candidato
+Create the most relevant resume for each job, not the most complete one. The resume should make the recruiter quickly think: this candidate fits this role.
 
-O objetivo NÃO é criar o currículo mais completo possível.
+Prioritize:
 
-O objetivo é criar o currículo **mais relevante possível para a vaga específica**.
+- Job keywords and ATS terms.
+- Recruiter expectations.
+- Perceived level: intern, junior, or mid-level.
+- Stack, responsibilities, product context, and company context.
+- Real evidence from existing resumes in this repository.
 
-Um bom currículo customizado deve fazer o recrutador pensar rapidamente:
+## Mandatory Rules
 
-> “Esse candidato parece feito para esta vaga.”
+- The resume language must match the job description language. Use English for English job descriptions and Portuguese for Portuguese job descriptions.
+- Never add technologies, frameworks, tools, responsibilities, experiences, certifications, or skills that are not mentioned in at least one existing resume in this directory.
+- If a job mentions a technology that does not appear in any existing resume, omit it or treat it only as job context. Never present it as candidate knowledge or experience.
+- Do not infer skills by proximity. Example: Python/FastAPI does not imply Django; React does not imply Next.js unless Next.js already appears in an existing resume.
+- Generated HTML resumes must follow the formatting, visual structure, and style of `TEMPLATE.html`, unless explicitly instructed otherwise.
+- Every resume must include exactly one `Skills: ...` line below the header and before the experience section, listing all technologies mentioned anywhere in the resume, separated by commas.
+- The resume must fit on a single page. If content overflows, cut by relevance 
+  (least job-relevant bullets/certifications first), never by reducing font size 
+  below readable thresholds or compressing margins excessively.
+- Before finishing, review the resume for unsupported technologies or claims. Remove anything without a source in an existing resume.
 
----
+## Relevance Rules
 
-## 🧠 Princípios Fundamentais
+- Relevance beats completeness. Remove anything that does not increase fit for the specific job.
+- Alignment beats technical impressiveness. Prefer the exact stack, responsibilities, and wording from the job description.
+- The top of the resume must answer in about 10 seconds: role fit, main technologies, relevant experience, level, and work context.
+- Preserve strong quantified impact when it is already supported by existing resumes. Do not remove standout metrics such as percentages, endpoint counts, test counts, cost reductions, or reliability improvements just to save space; cut weaker, less relevant content first.
+- Avoid noise: unrelated technologies, too many skills, senior-sounding language for junior roles, unnecessary DevOps/cloud emphasis, unrelated frontend/backend details, extra projects, and weak certifications.
 
-### 1. Relevância > Completude
+## Title
 
-O currículo não deve conter tudo que o candidato sabe ou já fez.
+Use the target role plus the main relevant technologies when the job is specific.
 
-Deve conter apenas o que aumenta a chance de entrevista para aquela vaga.
-
-Remover, reduzir ou esconder qualquer item que não ajude diretamente no encaixe, mesmo que seja tecnicamente bom.
-
-Exemplos:
-
-- Se a vaga não pede IaC, Terraform não deve ocupar destaque.
-- Se a vaga não pede AWS, cloud deve aparecer apenas como diferencial secundário.
-- Se a vaga é backend básico, a seção de competências deve focar só em backend e banco.
-- Se a vaga não pede frontend, frontend deve ser removido ou aparecer apenas em projeto.
-- Se a vaga é Python/FastAPI, projeto Node/NestJS pode ser reduzido ou removido.
-- Se a vaga é Node/NestJS, projeto Python/FastAPI pode ser reduzido ou removido.
-- Se o certificado não reforça a vaga, remover.
-- Se uma tecnologia gera ruído ou muda a percepção do perfil, remover ou descer.
-
-Currículo bom não é inventário. Currículo bom é filtro.
-
----
-
-### 2. Alinhamento > Qualidade Técnica
-
-Um currículo genérico forte é inferior a um currículo mediano altamente alinhado com a vaga.
-
-Sempre priorizar:
-
-- Stack mencionada na vaga
-- Responsabilidades descritas
-- Tipo de sistema: web, APIs, dados, cloud, integrações, automações
-- Nível esperado: estágio, júnior ou pleno
-- Termos exatos usados na descrição da vaga
-
-Se uma informação é tecnicamente impressionante, mas não reforça o fit da vaga, ela deve perder espaço.
-
----
-
-### 3. O recrutador bate o olho por 10 segundos
-
-O topo do currículo precisa responder rapidamente:
-
-- Esse candidato usa as tecnologias que eu pedi?
-- Ele já fez algo parecido?
-- Ele parece estar no nível certo?
-- Ele está disponível para o formato/local da vaga?
-
-Se a resposta não for óbvia, o currículo deve ser refeito.
-
-O currículo deve ser claro para RH antes de ser impressionante para técnico.
-
----
-
-### 4. Nunca gerar ruído desnecessário
-
-Ruído é qualquer informação que distrai, confunde ou enfraquece o posicionamento.
-
-Exemplos de ruído:
-
-- Tecnologias não pedidas pela vaga ocupando destaque.
-- Muitos tópicos diferentes competindo por atenção.
-- Bullet técnico demais para uma vaga júnior simples.
-- Ênfase em DevOps para vaga de backend web.
-- Ênfase em frontend para vaga backend.
-- Certificado pouco relacionado.
-- Projeto desalinhado com a stack da vaga.
-- Linguagem que parece sênior demais para vaga júnior.
-- Descrições longas que escondem o que a vaga realmente pede.
-- Seção de competências grande demais, parecendo inventário técnico.
-
-Regra prática:
-
-> Se uma informação não ajuda o recrutador a dizer “sim”, ela provavelmente atrapalha.
-
----
-
-### 5. Competências devem ser enxutas
-
-A seção de competências deve ser curta, objetiva e altamente alinhada à vaga.
-
-Ela NÃO deve listar tudo que o candidato sabe.
-
-Ela deve mostrar rapidamente:
-
-- linguagens principais;
-- frameworks principais;
-- bancos de dados relevantes;
-- ferramentas essenciais, apenas se a vaga pedir ou valorizar.
-
-Evitar colocar em competências:
-
-- manutenção de funcionalidades;
-- revisão de código;
-- boas práticas;
-- troubleshooting;
-- análise de métricas;
-- design de software;
-- system design;
-- colaboração;
-- entrega de valor;
-- termos comportamentais.
-
-Esses pontos devem aparecer no resumo ou na experiência, não como competências técnicas.
-
----
-
-## 🧩 Regras para Competências
-
-### Vaga backend básica
-
-Usar apenas blocos essenciais:
+Examples:
 
 ```text
-Backend: Python, FastAPI, Node.js, NestJS, APIs REST
-Bancos de Dados: MySQL, PostgreSQL, DynamoDB
-````
-
-Se a vaga pedir Java/Spring:
-
-```text
-Backend: Java, Spring Boot básico, Python, APIs REST
-Bancos de Dados: MySQL, PostgreSQL, DynamoDB
+Junior Backend Developer | Python, FastAPI, PostgreSQL
+Junior Backend Developer | Node.js, TypeScript, NestJS
+Junior Full Stack Developer | React, Node.js, REST APIs
 ```
 
----
+If a user explicitly asks for the main job title without stack, extract only the role title from the job description.
 
-### Vaga backend com testes
+## Skills Line
 
-Adicionar testes apenas se for relevante:
-
-```text
-Backend: Python, FastAPI, APIs REST
-Bancos de Dados: MySQL, PostgreSQL
-Testes: pytest, Testcontainers, Jest
-```
-
----
-
-### Vaga backend com cloud, Docker ou CI/CD
-
-Adicionar ferramentas:
+Use a single compact line:
 
 ```text
-Backend: Python, FastAPI, APIs REST
-Bancos de Dados: MySQL, PostgreSQL, DynamoDB
-Ferramentas: AWS, Docker, GitHub Actions, CI/CD
+Skills: Python, FastAPI, REST APIs, PostgreSQL, Docker
 ```
 
-Se a vaga pedir Terraform ou IaC:
+Rules:
+
+- Include every technology mentioned anywhere in the resume.
+- Use comma-separated skills only.
+- Do not group by categories.
+- Do not list soft skills, responsibilities, or generic practices.
+- Do not include technologies just because they exist in the candidate inventory; if a technology is not useful enough to be in `Skills: ...`, remove it from the resume too.
+
+## Experience
+
+Each bullet should follow:
 
 ```text
-Ferramentas: AWS, Docker, GitHub Actions, Terraform, CI/CD
+action + technology/context + result or impact
 ```
 
-Não colocar Terraform se a vaga não pedir IaC, cloud avançado ou infraestrutura.
+Keep bullets that prove fit with the job. Remove or reduce bullets that are technically good but not relevant.
+Limit to 4-6 bullets per role for junior/mid-level resumes. If more than 6 are 
+relevant, keep only the strongest matches to the job.
+Always write experience bullets in first person consistently, such as "Desenvolvi", "Implementei", "Otimizei", "Automatizei", "Analisei" and "Participei". Do not mix third-person bullets in the same resume.
+When shortening bullets, preserve the most recruiter-visible metric and the result. Prefer removing secondary context over removing quantified impact.
 
----
+For junior roles, emphasize execution, APIs, integrations, tests, debugging, databases, learning ability, collaboration, and clear delivery. Avoid language that sounds too senior.
 
-### Vaga backend com observabilidade
+For mid-level roles, emphasize autonomy, ownership, architecture, reliability, performance, and measurable impact.
 
-Adicionar observabilidade apenas se a vaga pedir:
+## Projects
 
-```text
-Backend: Python, FastAPI, APIs REST
-Bancos de Dados: MySQL, PostgreSQL, DynamoDB
-Ferramentas: AWS, Docker, GitHub Actions
-Observabilidade: CloudWatch, Prometheus, Grafana
-```
+Always include Sunlog.dev or PocScript unless the job clearly demands otherwise. Never select a project based on a single keyword match - always require an explicit, clear signal from the job description.
+Project descriptions must stay concrete and evidence-based. Avoid generic phrases such as "complete application," "pieces," or "functional platform" unless followed by specific technologies, features, or numbers.
+When a selected project has strong existing metrics or concrete proof points, include them if space allows. For Sunlog.dev, prefer concrete evidence such as REST APIs, relational modeling, authentication, API integration, production monitoring, 33 endpoints, and 100 unit tests over vague platform descriptions.
 
----
+### When to use Sunlog.dev (default primary project)
 
-### Vaga fullstack
+Use as the main project for:
 
-Backend sempre vem antes, se o alvo principal ainda for backend.
+- Full stack roles (frontend + backend together)
+- Node.js, TypeScript, or NestJS jobs
+- Jobs mentioning React, Next.js, or modern frontend frameworks
+- Jobs mentioning CI/CD, Docker, observability, or production deployment
+- Generic/unspecified stack jobs with no clear domain or language signal
 
-```text
-Backend: Node.js, TypeScript, NestJS, APIs REST
-Bancos de Dados: PostgreSQL, MySQL
-Frontend: React, Next.js, TailwindCSS
-Ferramentas: Docker, GitHub Actions
-```
+### When to use PocScript (default secondary project)
 
-Frontend só entra se a vaga pedir explicitamente frontend, fullstack, React, Next.js ou TypeScript no frontend.
+Add as a second project when the job mentions or values:
 
----
+- Computer science fundamentals, algorithms, data structures
+- Systems programming, low-level development, compilers, interpreters
+- Tooling, infrastructure, or engineering-heavy work
+- Technical curiosity, learning ability, or strong CS background
+- Startups or engineering-focused teams without a rigid CRUD-only scope
 
-### Vaga frontend/fullstack com mais peso em frontend
+Omit for clearly traditional, CRUD-only, business-process-focused roles with no engineering depth signal.
 
-```text
-Frontend: React, Next.js, TypeScript, TailwindCSS
-Backend: Node.js, NestJS, APIs REST
-Bancos de Dados: PostgreSQL, MySQL
-Ferramentas: Docker, GitHub Actions
-```
+### When to use PCBuilderBR
 
----
+Use instead of Sunlog.dev only when the job explicitly mentions:
 
-### Vaga cloud/serverless
+- Python or FastAPI as the primary required stack
+- E-commerce, marketplace, pricing, or product-catalog domains
+- Compatibility rules, business calculations, or domain-specific validation logic as a core responsibility
+- Web scraping or third-party data/price integration as a core focus, not just a generic "integrate third-party programs" phrase
 
-```text
-Backend: Python, APIs REST, workers assíncronos
-Cloud: AWS Lambda, SQS, S3, DynamoDB, CloudWatch
-Bancos de Dados: MySQL, PostgreSQL, DynamoDB
-Ferramentas: Docker, GitHub Actions, Terraform
-```
+Do not use PCBuilderBR based on generic phrases like "specifications," "improvements," "integrate software components," or "troubleshooting." These are too common across job posts to count as a signal.
 
-Usar esse formato apenas se a vaga realmente puxar para cloud/serverless.
+### Default fallback
 
----
+If the job has no specific stack, domain, or technical focus mentioned (truly generic junior/full stack postings), default to Sunlog.dev as the main project and PocScript as the second project. This pair shows the broadest and strongest engineering signal without relying on a stack-specific match.
 
-## 🧩 Estrutura Base do Currículo
+### Selection checklist
 
-### Regras obrigatórias para currículos gerados
+Before finalizing project choice, confirm:
 
-Ao gerar ou customizar currículos neste diretório, nunca adicionar tecnologias, frameworks, ferramentas, responsabilidades, experiências, certificados ou competências que não estejam mencionados em pelo menos um currículo já existente no diretório.
+- Is the signal for this project explicit in the job description, not inferred from a single generic word?
+- Would a recruiter reading the job post agree this project is the obvious fit?
+- If no strong signal exists for any specific project, did I fall back to Sunlog.dev + PocScript?
 
-Se uma tecnologia aparece na vaga, mas não aparece em nenhum currículo existente, ela deve ser omitida ou tratada apenas como contexto da vaga, nunca como conhecimento, experiência ou competência do candidato.
+## Education, Languages, Certifications
 
-Não inferir conhecimento por proximidade técnica. Exemplo: saber Python/FastAPI não autoriza colocar Django; saber React não autoriza colocar Next.js se isso não estiver em currículo existente; saber AWS Lambda não autoriza colocar serviços AWS não mencionados.
+- Keep education objective.
+- Preserve strong academic merit signals, especially full scholarships such as "Full scholarship (100%)," when they are part of the candidate inventory or explicitly provided by the user. Do not cut them unless space is impossible after removing weaker content first.
+- If the candidate has a full scholarship at PUCPR, include it as "Bolsa integral (100%)" / "Full scholarship (100%)" in the education section whenever the resume language matches, unless the user explicitly asks to remove it.
+- Keep languages aligned with the job language and requirements.
+- Include certifications only when they directly reinforce the job.
+- Database certification can stay for SQL, relational database, modeling, query performance, transaction, or data-heavy roles.
+- Remove certifications when they add little fit or consume space.
 
-Currículos HTML gerados devem seguir a mesma formatação, estrutura visual e estilo do `TEMPLATE.html`, salvo instrução explícita em contrário. Não criar layouts novos, colunas laterais, temas visuais diferentes ou estilos autorais quando o pedido for gerar currículo.
+## Customization Workflow
 
-Antes de finalizar, revisar especificamente se há alguma tecnologia ou afirmação que não tenha fonte em currículo existente do diretório. Se houver, remover.
+1. Read the job description and extract role, level, stack, responsibilities, work model, location, repeated terms, and company priorities.
+2. Classify content as essential, useful, or noise.
+3. Adjust the title and `Skills: ...` line.
+4. Select only relevant experience bullets.
+5. Choose the most aligned project.
+6. Decide whether certifications help.
+7. Remove noise.
+8. Verify the resume is truthful, sourced from existing resumes, aligned with the job, and clear for HR.
 
-### 1. Título
-
-Formato:
-
-```text
-Cargo alvo | principais tecnologias da vaga
-```
-
-Exemplos:
-
-```text
-Desenvolvedor Backend Júnior | Python, FastAPI, PostgreSQL
-```
-
-```text
-Desenvolvedor Backend Júnior | Node.js, TypeScript, NestJS
-```
-
-```text
-Desenvolvedor Full Stack Júnior | React, Node.js, APIs REST
-```
-
-Nunca usar título genérico quando a vaga é específica.
-
-O título deve ser ajustado para a vaga.
-
----
-
-### 2. Resumo
-
-O resumo é o bloco mais importante do currículo.
-
-Deve conter:
-
-* Cargo alvo
-* Stack principal da vaga
-* Tipo de sistema ou problema
-* Experiência prática relevante
-* Disponibilidade/local quando relevante
-* Sinal de aprendizado e adaptação
-
-Evitar:
-
-* Lista longa de tecnologias
-* Buzzwords genéricas
-* Exagero técnico
-* Termos não relacionados à vaga
-
-Modelo:
-
-```text
-Desenvolvedor backend com experiência prática em APIs REST, integrações e banco de dados em ambiente de produção. Atuo principalmente com [stack da vaga], desenvolvendo features, correções, testes e rotinas backend. Busco vaga [nível/formato] com foco em [principais responsabilidades da vaga].
-```
-
----
-
-### 3. Competências
-
-A seção de competências deve ser uma das partes mais curtas do currículo.
-
-Regras:
-
-* Usar de 2 a 4 blocos no máximo.
-* Cada bloco deve ter tecnologias objetivas.
-* Não listar conceitos comportamentais.
-* Não listar responsabilidades como competência.
-* Não listar tecnologias que não ajudam na vaga.
-* Não tentar mostrar tudo.
-* Ordenar os blocos conforme a vaga.
-
-Ordem recomendada para vaga backend simples:
-
-```text
-Backend
-Bancos de Dados
-```
-
-Ordem recomendada para vaga backend com ferramentas:
-
-```text
-Backend
-Bancos de Dados
-Ferramentas
-```
-
-Ordem recomendada para vaga fullstack:
-
-```text
-Backend
-Bancos de Dados
-Frontend
-Ferramentas
-```
-
-Ordem recomendada para vaga cloud:
-
-```text
-Backend
-Cloud
-Bancos de Dados
-Ferramentas
-```
-
----
-
-### 4. Experiência
-
-Cada bullet deve seguir:
-
-```text
-ação + tecnologia/contexto + resultado/impacto
-```
-
-Exemplo:
-
-```text
-Desenvolvi APIs REST em Python com FastAPI para integração entre serviços internos.
-```
-
-Critérios para escolher bullets:
-
-* A vaga pede isso?
-* Esse bullet prova experiência real no problema da vaga?
-* Esse bullet usa palavras-chave importantes?
-* Esse bullet reforça o nível correto?
-* Esse bullet reduz ou aumenta ruído?
-
-Se o bullet não reforça a vaga, remover ou substituir.
-
-Não manter bullet apenas porque ele é tecnicamente bom.
-
----
-
-### 5. Projetos
-
-Projetos devem ser escolhidos por aderência à vaga, não por orgulho pessoal.
-
-Regra principal:
-
-> Usar apenas um projeto, exceto quando a vaga pedir explicitamente stacks ou contextos que os dois projetos cobrem bem.
-
-Exemplos:
-
-* Vaga Python/FastAPI → usar PCBuilderBR.
-* Vaga Node/NestJS/TypeScript → usar Sunlog.dev.
-* Vaga fullstack React + backend → usar Sunlog.dev.
-* Vaga backend com regras de negócio → usar PCBuilderBR.
-* Vaga de startup, especialmente startup americana, com foco em engenharia forte, sistemas, compiladores, baixo nível, infraestrutura, ferramentas internas ou perfil generalista técnico → considerar PocScript como projeto principal ou diferencial forte.
-* Vaga que pede Python e Node → pode manter os dois, se houver espaço.
-* Vaga genérica backend → escolher o projeto que melhor conversa com a stack principal.
-
-O projeto deve mostrar:
-
-* stack relevante;
-* problema resolvido;
-* backend/API/banco/testes/deploy quando fizer sentido;
-* link para código e demo se existirem.
-
-Remover ou reduzir projetos desalinhados.
-
-Se houver dúvida, manter apenas o projeto mais alinhado.
-
----
-
-### 6. Formação, Idiomas e Certificados
-
-Manter formação de forma objetiva.
-
-Certificados só devem aparecer se reforçarem diretamente a vaga.
-
-Exemplos:
-
-* Vaga com SQL, modelagem, performance de queries, banco relacional ou dados → certificado de Database Engineering pode ficar.
-* Vaga backend genérica → certificado pode sair.
-* Vaga cloud → certificado de banco pode sair se ocupar espaço.
-* Vaga Node/React → certificado de banco geralmente deve sair.
-* Vaga Python/FastAPI com banco forte → certificado pode ficar se houver espaço.
-
-Não manter certificado por apego.
-
----
-
-## 🔄 Processo de Customização por Vaga
-
-### Etapa 1 — Ler a vaga e extrair sinais
-
-Identificar:
-
-* Cargo
-* Nível
-* Stack obrigatória
-* Stack desejável
-* Responsabilidades
-* Tipo de produto/sistema
-* Formato: remoto, híbrido, presencial
-* Localidade
-* Palavras repetidas
-* O que a empresa parece valorizar
-
----
-
-### Etapa 2 — Separar o que é essencial, desejável e ruído
-
-Classificar cada item do currículo em:
-
-#### Essencial
-
-A vaga pede diretamente ou o item prova fit forte.
-
-#### Desejável
-
-Ajuda, mas não deve ocupar destaque.
-
-#### Ruído
-
-Não ajuda ou pode confundir o posicionamento.
-
-Tudo que for ruído deve ser removido, reduzido ou movido para baixo.
-
----
-
-### Etapa 3 — Classificar a vaga
-
-Tipo:
-
-* Backend
-* Fullstack
-* DevOps/Cloud
-* Data
-* QA/Testes
-* Produto interno
-* Consultoria
-
-Nível:
-
-* Estágio
-* Júnior
-* Pleno
-
-Ajuste por nível:
-
-* Júnior → clareza, execução, aprendizado, APIs, bugs, testes, banco
-* Pleno → autonomia, impacto, arquitetura, ownership, performance
-* Estágio → base técnica, projetos, aprendizado, colaboração
-
----
-
-### Etapa 4 — Ajustar título
-
-O título deve usar o cargo e as tecnologias principais da vaga.
-
-Exemplo:
-
-```text
-Desenvolvedor Backend Júnior | Python, FastAPI, PostgreSQL
-```
-
-Evitar título amplo se a vaga é específica.
-
----
-
-### Etapa 5 — Reescrever resumo
-
-Focar em:
-
-* Stack da vaga
-* Atividades da vaga
-* Experiência real relacionada
-* Nível correto
-* Local/formato se relevante
-
-O resumo deve parecer escrito para aquela vaga.
-
----
-
-### Etapa 6 — Ajustar competências
-
-Criar uma seção curta, com poucos blocos.
-
-Regra:
-
-* Backend básico → `Backend` e `Bancos de Dados`
-* Backend com cloud/CI/CD/Docker → adicionar `Ferramentas`
-* Backend com observabilidade → adicionar `Observabilidade`
-* Fullstack/frontend → adicionar `Frontend`
-* Cloud/serverless → usar `Cloud` ou `Ferramentas`, conforme a vaga
-
-Não incluir blocos só para mostrar conhecimento.
-
-Não incluir tecnologias que não aparecem na vaga ou não reforçam o fit.
-
----
-
-### Etapa 7 — Ajustar experiência
-
-Selecionar apenas bullets relevantes.
-
-Para cada bullet, perguntar:
-
-* Isso ajuda nesta vaga?
-* Isso usa palavras-chave importantes?
-* Isso mostra experiência prática?
-* Isso está no nível certo?
-* Isso compete com informações mais importantes?
-
-Se não, remover.
-
----
-
-### Etapa 8 — Escolher projeto
-
-Selecionar o projeto mais alinhado com a vaga.
-
-Manter dois projetos apenas se a vaga justificar claramente.
-
-Se um projeto não conversa com a vaga, remover.
-
----
-
-### Etapa 9 — Avaliar certificado
-
-Certificado só entra se for diretamente relevante.
-
-Perguntar:
-
-* A vaga enfatiza banco de dados?
-* A vaga pede SQL, modelagem, performance, transações ou dados?
-* O certificado reforça um requisito importante?
-* Há espaço sem deixar o currículo poluído?
-
-Se não, remover.
-
----
-
-### Etapa 10 — Cortar ruído
-
-Antes da versão final, fazer uma passada específica só para remover ruído.
-
-Perguntar:
-
-* O que aqui não foi pedido?
-* O que aqui distrai?
-* O que aqui parece técnico demais para a vaga?
-* O que aqui parece fora da stack?
-* O que aqui ocupa espaço sem aumentar chance de entrevista?
-* O que aqui eu coloquei só porque acho legal?
-* A seção de competências está curta o suficiente?
-* Há mais de um projeto sem necessidade?
-* O certificado realmente ajuda?
-
-Remover sem apego.
-
----
-
-### Etapa 11 — Revisão final
-
-Checklist:
-
-* Esse currículo parece feito para esta vaga?
-* O topo responde a vaga em 10 segundos?
-* As tecnologias principais aparecem no título/resumo/competências?
-* A seção de competências está enxuta?
-* A experiência prova algo parecido com o que a vaga pede?
-* O projeto escolhido reforça a stack da vaga?
-* Há ruído técnico desnecessário?
-* O nível percebido está correto?
-* O currículo está claro para RH?
-* O currículo continua verdadeiro?
-
-Se não, refazer.
-
----
-
-## ⚠️ Erros Críticos
-
-### ❌ Currículo inventário
-
-Listar tudo que o candidato sabe.
-
-Correção:
-
-> Listar apenas o que aumenta o fit com a vaga.
-
----
-
-### ❌ Competências grandes demais
-
-Competências não devem parecer uma lista completa de tecnologias.
-
-Ruim:
-
-```text
-Backend: APIs REST, FastAPI, NestJS, testes automatizados, manutenção de funcionalidades, design de software, revisão de código, boas práticas, troubleshooting
-```
-
-Melhor:
-
-```text
-Backend: Python, FastAPI, Node.js, NestJS, APIs REST
-Bancos de Dados: MySQL, PostgreSQL, DynamoDB
-```
-
----
-
-### ❌ Currículo genérico
-
-Usar o mesmo currículo para todas as vagas.
-
-Correção:
-
-> Usar versões base e customizar para vagas boas.
-
----
-
-### ❌ Excesso de DevOps em vaga backend web
-
-Terraform, CI/CD, cloud e infra podem ser diferenciais, mas não devem dominar vaga de API/CRUD/backend.
-
----
-
-### ❌ Excesso de frontend em vaga backend
-
-Frontend só deve aparecer se a vaga pedir fullstack ou se o projeto precisar de contexto.
-
----
-
-### ❌ Dois projetos sem necessidade
-
-Manter dois projetos pode gerar ruído.
-
-Correção:
-
-> Usar um projeto principal, a menos que a vaga justifique claramente os dois.
-
----
-
-### ❌ Certificado desalinhado
-
-Certificado só deve aparecer se reforçar um requisito relevante.
-
----
-
-### ❌ Excesso de senioridade em vaga júnior
-
-Evitar linguagem que pareça liderança técnica, arquitetura ampla ou responsabilidade incompatível com júnior.
-
----
-
-### ❌ Falta de palavras-chave
-
-Se a vaga pede FastAPI, PostgreSQL e Docker, esses termos precisam aparecer claramente.
-
----
-
-### ❌ Foco em tecnologia em vez de problema
-
-Tecnologia deve aparecer ligada a algo feito.
-
-Ruim:
-
-```text
-Experiência com AWS Lambda, SQS, DynamoDB e Terraform.
-```
-
-Melhor:
-
-```text
-Implementei workers assíncronos com AWS Lambda e SQS para processar tarefas fora do fluxo principal da API.
-```
-
----
-
-## 🚀 Estratégia de Aplicação
-
-### 1. Currículos base
-
-Manter versões base para:
-
-* Python/FastAPI
-* Node.js/NestJS
-* Backend geral
-* Cloud/AWS
-* Fullstack
-
-Usar a versão mais próxima como ponto de partida.
-
----
-
-### 2. Customização por prioridade
-
-#### Vaga comum
-
-Usar versão base com ajustes leves.
-
-#### Vaga boa
-
-Customizar título, resumo, competências, experiência e projeto.
-
-#### Vaga muito boa
-
-Customizar profundamente e enviar mensagem junto.
-
----
-
-### 3. Regra de compatibilidade
-
-Aplicar se:
-
-* Linguagem bate; ou
-* Framework bate; ou
-* Conceitos principais batem; ou
-* Problema da vaga parece parecido com experiência/projeto.
-
-Não precisa bater 100%.
-
----
-
-### 4. Distribuição ideal
-
-* 60% vagas alinhadas
-* 30% vagas parcialmente alinhadas
-* 10% vagas acima do nível
-
----
-
-### 5. Prioridade
-
-Dar mais atenção para:
-
-* Vagas híbridas ou presenciais em Curitiba
-* Vagas com poucas candidaturas
-* Empresas menores
-* Vagas recém-publicadas
-* Vagas com stack muito próxima
-* Vagas com descrição objetiva
-* Vagas fora do “candidatura fácil”
-
----
-
-## 🧠 Estratégia de Posicionamento
-
-O mesmo candidato pode ser posicionado de formas diferentes.
+## Positioning Defaults
 
 ### Backend
 
-Destacar:
+Emphasize REST APIs, databases, integrations, tests, workers, and business rules. Reduce frontend, advanced infrastructure, and unrelated certifications.
 
-* APIs REST
-* Banco de dados
-* Integrações
-* Testes
-* Workers
-* Regras de negócio
+### Full Stack
 
-Reduzir:
+Emphasize API + UI delivery, complete projects, React/Next.js when requested, backend, and database work. Reduce advanced cloud or observability unless requested.
 
-* Frontend
-* Infra avançada
-* Certificados pouco relacionados
+### Cloud / Serverless / DevOps
 
-Competências típicas:
+Emphasize AWS Lambda, SQS, S3, DynamoDB, Terraform, GitHub Actions, Docker, Linux, CloudWatch, and CI/CD. Reduce frontend and unrelated projects.
 
-```text
-Backend: Python, FastAPI, APIs REST
-Bancos de Dados: MySQL, PostgreSQL
-```
+### Python Backend
 
----
+Emphasize Python, FastAPI, pytest, SQL, Docker, REST APIs, and integrations. Reduce Node/NestJS and frontend unless requested.
 
-### Fullstack
+### Node.js Backend
 
-Destacar:
+Emphasize Node.js, TypeScript, NestJS, PostgreSQL, REST APIs, Jest, and Docker. Reduce Python/FastAPI and advanced AWS unless requested.
 
-* APIs + UI
-* Projetos completos
-* React/Next.js quando a vaga pedir
-* Backend com banco de dados
+## Final Check
 
-Reduzir:
+Before finalizing, ask:
 
-* AWS avançado
-* Terraform
-* Observabilidade complexa
+- Does this resume look made for this job?
+- Does the top answer the job fit in 10 seconds?
+- Does the language match the job description?
+- Are the title and `Skills: ...` line aligned with the job?
+- Are the experience bullets relevant and level-appropriate?
+- Is the chosen project the strongest fit?
+- Is there any unsupported technology or claim?
+- Is there any noise that should be removed?
 
-Competências típicas:
-
-```text
-Backend: Node.js, TypeScript, NestJS, APIs REST
-Bancos de Dados: PostgreSQL, MySQL
-Frontend: React, Next.js, TailwindCSS
-```
-
----
-
-### Cloud/Serverless
-
-Destacar:
-
-* AWS Lambda
-* SQS
-* S3
-* DynamoDB
-* Terraform
-* GitHub Actions
-* CloudWatch
-
-Reduzir:
-
-* Frontend
-* Projetos sem cloud
-* Certificados não relacionados
-
-Competências típicas:
-
-```text
-Backend: Python, APIs REST, workers assíncronos
-Cloud: AWS Lambda, SQS, S3, DynamoDB, CloudWatch
-Ferramentas: Docker, GitHub Actions, Terraform
-```
-
----
-
-### Backend Python
-
-Destacar:
-
-* Python
-* FastAPI
-* pytest
-* SQL
-* Docker
-* APIs REST
-* Integrações
-
-Reduzir:
-
-* Node/NestJS
-* Frontend
-* Terraform se não pedido
-
-Competências típicas:
-
-```text
-Backend: Python, FastAPI, APIs REST
-Bancos de Dados: PostgreSQL, MySQL, DynamoDB
-```
-
----
-
-### Backend Node.js
-
-Destacar:
-
-* Node.js
-* TypeScript
-* NestJS
-* PostgreSQL
-* APIs REST
-* Jest
-* Docker
-
-Reduzir:
-
-* Python/FastAPI
-* AWS avançado se não pedido
-* Certificados pouco relacionados
-
-Competências típicas:
-
-```text
-Backend: Node.js, TypeScript, NestJS, APIs REST
-Bancos de Dados: PostgreSQL, MySQL
-```
-
----
-
-## 📈 Métrica de Sucesso
-
-Indicador principal:
-
-```text
-Taxa de resposta = entrevistas / aplicações
-```
-
-Referência:
-
-* 10% → bom
-* 20% → excelente
-* <5% → provável problema de alinhamento, canal ou posicionamento
-
-Se a taxa ficar abaixo de 5%, revisar:
-
-* Vagas escolhidas
-* Título
-* Resumo
-* Palavras-chave
-* Nível percebido
-* Excesso de ruído
-* Competências grandes demais
-* Projetos desalinhados
-* Certificados desnecessários
-* Localização/formato
-* Canal de candidatura
-
----
-
-## 🔥 Regra Final
-
-Não existe currículo perfeito.
-
-Existe:
-
-> currículo certo para a vaga certa.
-
-E currículo certo não é o que mostra tudo.
-
-É o que mostra **somente o que importa para aquela vaga**.
+The right resume is not the one that shows everything. It is the one that shows only what matters for the job.
